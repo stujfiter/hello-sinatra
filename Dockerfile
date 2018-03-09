@@ -1,7 +1,6 @@
-FROM ruby
+FROM ruby:alpine
 
 RUN gem install sinatra
-RUN gem install thin
 
 COPY myapp.rb myapp.rb
 EXPOSE 4567
